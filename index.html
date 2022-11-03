@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html>
+  <head> <!--link rel="icon" href="PROJ_favicon.gif" type="image/gif" sizes="32x32"-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title lang="en-us">Platesite: My Virtual Wall</title>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" type="text/css"  href="css/style.css">
+        <!-- FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic' rel='stylesheet' type='text/css'>
+    </head>
 <body>
+  <!-- BACK TO TOP BUTTON -->
+    <button onclick="topFunction()" id="upBtn"><i class="fa fa-chevron-circle-up"></i></button>
+    <script>
+            //Get the button
+            var upbutton = document.getElementById("upBtn");
+    
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
 
-<h1>My First Heading</h1>
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    upbutton.style.display = "block";
+                } else {
+                    upbutton.style.display = "none";
+                }
+            }
 
-<p>My first paragraph.</p>
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+         }
+    </script>
+  <!-- NAVIGATION -->
+  
+<h1>Testing</h1>
+
+<p>Testing2</p>
 
 </body>
 </html>
